@@ -6,6 +6,7 @@ import { BotonesContadorComponent } from './components/botones-contador/botones-
 import { PantallaContadorComponent } from './components/pantalla-contador/pantalla-contador.component';
 import { ContadorService } from './services/contador/contador.service';
 import { UserListComponent } from './components/user-list/user-list.component';
+import { UsersService } from './services/users/users.service';
 
 @NgModule({
   // Declaración de componentes creados por este modulo
@@ -23,6 +24,7 @@ import { UserListComponent } from './components/user-list/user-list.component';
   // Declaración de servicios (angular services)
   providers: [
     ContadorService,
+    UsersService,
   ],
   // Componente inicial de la app
   bootstrap: [AppComponent]
